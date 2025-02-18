@@ -17,7 +17,7 @@ const canceledStep = [
     { name: "Order Canceled", description: "on Thu, 11 Jul", value: "CANCELED" },
 ];
 
-const currentStep = 1; // Change this value based on the current step
+const currentStep = 2; // Change this value based on the current step
 
 const OrderStepper = ({ orderStatus }: any) => {
     const [statusStep, setStatusStep] = React.useState(steps);
@@ -45,7 +45,7 @@ const OrderStepper = ({ orderStatus }: any) => {
                             </Box>
                             {index < statusStep.length - 1 && (
                                 <div
-                                    className={`border h-20 w-[2px] ${index < currentStep ? "bg-[#00927c]" : "bg-gray-300 text-gray-600"}`}
+                                    className={`h-20 w-[2px] ${index < currentStep ? "bg-[#00927c]" : "bg-gray-300 text-gray-600"}`}
                                 >
                                 </div>
                             )}

@@ -3,6 +3,9 @@ import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import Orders from './Orders';
 import Orderdetails from './Orderdetails';
+import UserDetails from './UserDetails';
+import SavedCards from './SavedCards';
+import Address from './Address';
 
 const menu = [
   { name: "Orders", path: "/account/orders" },
@@ -19,7 +22,7 @@ function Account() {
   const handleClick = (item: any) => navigate(item.path);
 
   return (
-    <div className='px-5 lg:px-52 min-h-screen mt-10'>
+    <div className='px-5 lg:px-52 min-h-screen mt-10'>    {/* this <div> is important for left-right padding (work like container of bootstrap), use it on every page */}   
       <div>
         <h1 className="text-xl font-bold pb-5">Zosh</h1>
       </div>
@@ -38,7 +41,10 @@ function Account() {
         </section>
         <section className='right lg:col-span-2 lg:pl-5 py-5'>
           {/* <Orders /> */}
-          <Orderdetails />
+          {/* <Orderdetails /> */}
+          {/* <UserDetails /> */}
+          {/* <SavedCards /> */}
+          <Address />
         </section>
       </div>
     </div>

@@ -30,7 +30,7 @@ const paymentGatewayList = [
 
 function Checkout() {
     const [open, setOpen] = React.useState(false);
-const [paymentGateway, setPaymentGateway] = useState("RAZORPAY");
+    const [paymentGateway, setPaymentGateway] = useState("RAZORPAY");
 
 
     const handleOpen = () => setOpen(true);
@@ -38,8 +38,8 @@ const [paymentGateway, setPaymentGateway] = useState("RAZORPAY");
 
     const handlePaymentChange = (event: any) => {
         setPaymentGateway(event.target.value);
-        
-    } 
+
+    }
 
     // console.log(paymentGateway);
 
@@ -91,7 +91,6 @@ const [paymentGateway, setPaymentGateway] = useState("RAZORPAY");
                             </div>
                         </div>
                         <div className="border rounded-md">
-
                             <PricingCard />
                             <div className="p-5">
                                 <Button fullWidth variant="contained" sx={{ py: "11px" }}>
